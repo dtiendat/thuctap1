@@ -5,18 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{background-color: brown;display: flex;justify-content: center;}
+        #flex{background-color: brown;display: grid;
+        grid-template-columns: 400px 200px;
+   /*     grid-row-gap: 40px;  */
+        justify-content: center;
+        }
         #item{display: flex;justify-content: center;padding: 20px;}
-        img{border-radius: 50%;width: 100px;height: 100px;}
+        #item img{border-radius: 50%;width: 100px;height: 100px;}
         h3{color: red;}
         h4{color: blue;display: inline;text-decoration: underline;}
         #text{padding-left: 10px;}
-        #flex-main{border: inset 1px blue;width: 350px;background-color: yellow;margin-top: 200px;}
+        #flex-main{border: inset 1px blue;width: 350px;height: 350px;
+            background-color: yellow;margin-top: 200px;margin-bottom: 200px;float: left;}
         hr{width: 200px;text-align: center;color: orangered;}
+        /*grid*/
+         #grid{display: grid;grid-template-columns: 1fr 2fr 1fr;grid-gap: 10px 30px;}
     </style>
     <title>Document</title>
 </head>
 <body>
+    <div id="flex">
 <div id="flex-main" >
     <div id ="item">
         <div class="img">
@@ -36,6 +44,39 @@
             <h4>Giá 2 $</h4>
         </div>
 
+    </div>
+</div>
+<div id="flex-main" >
+    <div id ="item">
+        <div class="img">
+            <img src="burger.jpeg" alt="bánh">
+        </div>
+        <div id="text"> 
+            <h3><b>Bánh mỳ</b></h3>
+            <h4>Giá 2 $</h4>
+
+        </div>
+
+    </div><hr>
+    <div id="item">
+        <div class="img"><img src="traicay.jpeg" alt="trái cây"></div>
+        <div id="text">
+            <h3><b>Trái cây</b></h3>
+            <h4>Giá 2 $</h4>
+        </div>
+
+    </div>
+</div>
+</div>
+<div id="grid">
+    <div id="juice">
+        <img src="traicay.jpeg">
+    </div>
+    <div id="juice">
+        <img src="traicay.jpeg">
+    </div>
+    <div id="juice">
+        <img src="traicay.jpeg">
     </div>
 </div>
 </body>
